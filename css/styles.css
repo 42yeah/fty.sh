@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    src: url(../assets/share_tech.ttf);
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Share Tech Mono";
+}
+
+html {
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+    color: white;
+}
+
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, rgb(17, 16, 17), rgb(39, 37, 53));
+}
+
+#particle-canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+h1, h2 {
+    font-family: "Share Tech Mono", monospace;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #aaaaaa33;
+    user-select: none;
+}
+
+h3 {
+    margin-top: 0.5em;
+}
+
+p {
+    color: #eeeeeeee;
+    font-size: 1.0em;
+    max-width: 30em;
+    line-height: 1.5em;
+}
+
+.inner-container {
+    padding: 2em;
+    z-index: 2;
+}
+
+.list {
+    margin-top: 1em;
+    max-width: 35em;
+}
+
+.item {
+    display: block;
+    border: 1px solid #aaaaaaaa;
+    padding: 0.5em;
+    text-decoration: none;
+    color: #eeeeeeee;
+    transition: all 0.1s;
+    margin-bottom: -1px;
+}
+
+.item:first-of-type {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.item:last-of-type {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.item:hover {
+    background: #eeeeeeee;
+    color: rgb(17, 16, 17);
+}
+
+.img-holder {
+    margin-top: 0.4em;
+}
